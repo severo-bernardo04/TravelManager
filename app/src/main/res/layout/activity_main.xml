@@ -4,41 +4,63 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:padding="16dp">
+    android:background="@color/colorBackground"
+    android:padding="24dp">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Trip Setup" />
+        android:text="Trip Setup"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorTextPrimary"
+        android:layout_marginBottom="24dp" />
 
     <EditText
         android:id="@+id/editDestination"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Destination" />
+        android:hint="Destination"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/editDepartureDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Departure date (dd/mm/yyyy)" />
+        android:hint="Departure date"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginBottom="12dp" />
 
     <EditText
         android:id="@+id/editReturnDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Return date (dd/mm/yyyy)" />
+        android:hint="Return date"
+        android:padding="12dp"
+        android:background="@android:drawable/edit_text"
+        android:focusable="false"
+        android:clickable="true"
+        android:layout_marginBottom="20dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Preference" />
+        android:text="Preference"
+        android:textSize="16sp"
+        android:textColor="@color/colorTextSecondary"
+        android:layout_marginBottom="8dp" />
 
     <RadioGroup
         android:id="@+id/radioGroupPreference"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center">
+        android:gravity="center"
+        android:layout_marginBottom="24dp">
 
         <RadioButton
             android:id="@+id/radioAdventure"
@@ -51,20 +73,24 @@
             android:id="@+id/radioCulture"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Culture" />
+            android:text="Culture"
+            android:layout_marginStart="8dp" />
 
         <RadioButton
             android:id="@+id/radioBeach"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Beach" />
+            android:text="Beach"
+            android:layout_marginStart="8dp" />
 
     </RadioGroup>
 
     <Button
         android:id="@+id/btnConfirm"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Confirm" />
+        android:text="Confirm"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorPrimary" />
 
 </LinearLayout>
