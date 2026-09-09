@@ -1,0 +1,52 @@
+# Build outputs
+*.iml
+.gradle/
+build/
+/captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+.DS_Store
+
+# Keystore files (nunca versionar, exceto se o projeto exigir explicitamente)
+*.jks
+*.keystore
+
+# Log files
+*.log
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle wrapper - MANTENHA o gradlew, gradlew.bat e gradle/wrapper/*
+# (não ignore essa pasta, ela deve ir pro repo)
+
+# Google Services (se usar Firebase, plugins etc.)
+google-services.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Version control
+vcs.xml
+
+# lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
