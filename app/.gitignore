@@ -7,6 +7,8 @@ build/
 .cxx/
 local.properties
 
+.idea
+
 # Android Studio / IntelliJ
 .idea/
 *.iml
