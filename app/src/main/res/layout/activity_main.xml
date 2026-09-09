@@ -1,6 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Trip Setup" />
+
+    <EditText
+        android:id="@+id/editDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Destination" />
+
+    <EditText
+        android:id="@+id/editDepartureDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Departure date (dd/mm/yyyy)" />
+
+    <EditText
+        android:id="@+id/editReturnDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Return date (dd/mm/yyyy)" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preference" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPreference"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/radioAdventure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adventure"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radioCulture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Culture" />
+
+        <RadioButton
+            android:id="@+id/radioBeach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beach" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirm" />
+
+</LinearLayout>
